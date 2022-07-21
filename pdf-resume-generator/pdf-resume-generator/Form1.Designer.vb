@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.generatorBtn = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.filnameLabel = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -53,15 +53,15 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(425, 45)
         Me.Panel1.TabIndex = 1
         '
-        'Button1
+        'generatorBtn
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(105, 67)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(207, 42)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Generate PDF Resume"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.generatorBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.generatorBtn.Location = New System.Drawing.Point(105, 67)
+        Me.generatorBtn.Name = "generatorBtn"
+        Me.generatorBtn.Size = New System.Drawing.Size(207, 42)
+        Me.generatorBtn.TabIndex = 2
+        Me.generatorBtn.Text = "Generate PDF Resume"
+        Me.generatorBtn.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -100,9 +100,9 @@ Partial Class Form1
         Me.fullnameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fullnameLabel.Location = New System.Drawing.Point(97, 163)
         Me.fullnameLabel.Name = "fullnameLabel"
-        Me.fullnameLabel.Size = New System.Drawing.Size(185, 20)
+        Me.fullnameLabel.Size = New System.Drawing.Size(158, 20)
         Me.fullnameLabel.TabIndex = 0
-        Me.fullnameLabel.Text = "Mary Ann B. Natividad"
+        Me.fullnameLabel.Text = "Complate fullname"
         Me.fullnameLabel.Visible = False
         '
         'Form1
@@ -114,7 +114,7 @@ Partial Class Form1
         Me.Controls.Add(Me.fullnameLabel)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.generatorBtn)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form1"
         Me.Text = "PDF Resume Creator"
@@ -127,7 +127,7 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents generatorBtn As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents filnameLabel As Label
     Friend WithEvents Label4 As Label
