@@ -44,7 +44,7 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Window
+        Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -55,13 +55,15 @@ Partial Class Form1
         '
         'generatorBtn
         '
+        Me.generatorBtn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.generatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.generatorBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.generatorBtn.Location = New System.Drawing.Point(105, 67)
         Me.generatorBtn.Name = "generatorBtn"
         Me.generatorBtn.Size = New System.Drawing.Size(207, 42)
         Me.generatorBtn.TabIndex = 2
         Me.generatorBtn.Text = "Generate PDF Resume"
-        Me.generatorBtn.UseVisualStyleBackColor = True
+        Me.generatorBtn.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -109,14 +111,18 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(425, 261)
+        Me.BackColor = System.Drawing.Color.IndianRed
+        Me.ClientSize = New System.Drawing.Size(425, 205)
         Me.Controls.Add(Me.filnameLabel)
         Me.Controls.Add(Me.fullnameLabel)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.generatorBtn)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PDF Resume Creator"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

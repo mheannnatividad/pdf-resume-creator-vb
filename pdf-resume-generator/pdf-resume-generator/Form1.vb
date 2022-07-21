@@ -36,7 +36,6 @@ Public Class Form1
         pdfFileWriter.Add(careerObjective)
         Dim objective As Paragraph = New Paragraph(getJson.careerObj & vbLf & vbLf & vbLf)
         pdfFileWriter.Add(objective)
-        pdfFileWriter.Add(lineBar)
 
         Dim profAttri As Paragraph = New Paragraph("Proffessional Attributes")
         pdfFileWriter.Add(profAttri)
